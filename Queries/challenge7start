@@ -1,0 +1,48 @@
+-- Use Dictinct with Orderby to remove duplicate rows
+-- SELECT DISTINCT ON (______) _____,
+-- ______,
+-- ______,
+-- ______
+
+-- INTO nameyourtable
+-- FROM _______
+-- WHERE _______
+-- ORDER BY _____, _____ DESC;
+
+
+--title FROM titles
+--to_date FROM titles --> specify '9999-01-01'
+
+SELECT DISTINCT ON (title) title, 
+e.emp_no,
+e.first_name,
+e.last_name,
+from_date,
+to_date
+--INTO nameyourtable
+FROM titles
+	INNER JOIN employees AS e
+		ON (e.emp_no = titles.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY title, e.birth_date, e.emp_no DESC;
+
+SELECT e.emp_no,
+e.first_name,
+e.last_name,
+titles.title,
+titles.from_date,
+titles.to_date
+--INTO nameyourtable
+FROM employees AS e
+	INNER JOIN titles
+		ON (e.emp_no = titles.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY e.emp_no;
+
+SELECT DISTINCT ON (emp_no) emp_no, title
+--INTO nameyourtable
+FROM titles
+	INNER JOIN employees AS e
+		ON (e.emp_no = titles.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+ORDER BY title, e.birth_date, e.emp_no DESC;
