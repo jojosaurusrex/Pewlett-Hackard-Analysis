@@ -18,8 +18,8 @@ The purpose of this challenge was to have students familariaze themselves with P
 ## Summary
 There are 36,619 employees getting ready for retirement, with the sales department getting hit the hardest by losing close to 10,000 employees. Looking at Figure 1, we can see that there are plenty of retirement ready employees that can mentor the next generation of employees. 
 
-[Insert Figure 1]
+![retiringSoon](https://user-images.githubusercontent.com/98374315/163747675-24043ca3-190e-4d00-b5d9-52bf8c4e2540.PNG)
 Figure 1. Total Amount of employees ready to retire via department numbers.
 
-[Insert Fig2]
+![positions](https://user-images.githubusercontent.com/98374315/163747689-91123d14-abe8-42a5-9567-76071985178a.PNG)
 Figure 2. Shows a snippet of the type of empoyees we will be losing if and when they decide to retire.
